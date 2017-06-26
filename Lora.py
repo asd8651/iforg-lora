@@ -43,7 +43,7 @@ class Lora:
     def __del__(self):
         self.ser.close()
 if __name__ == '__main__':
-    power = power()
+    Lora = Lora()
     while True:
-        power.transaction(power.Vcom)
+        Lora.transaction(power.chip_cmd)
         time.sleep(2)
